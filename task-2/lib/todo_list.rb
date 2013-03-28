@@ -1,6 +1,5 @@
 class TodoList
 
-  # Initialize the TodoList with +items+ (empty by default).
   def initialize(params=[])
     raise IllegalArgument unless params[:db]
     @db = params[:db]
