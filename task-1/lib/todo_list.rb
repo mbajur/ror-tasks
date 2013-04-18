@@ -26,7 +26,11 @@ class TodoList
   end
 
   def completed? (item)
-    @list.include? [item, true]
+    if @completed[item] == TRUE
+      TRUE
+    else
+      FALSE
+    end
   end
 
   def first

@@ -1,7 +1,7 @@
 require 'bundler/setup'
 require 'rspec/expectations'
-require_relative '../lib/todo_list'
-require_relative '../lib/exceptions'
+require 'lib/todo_list'
+require 'lib/exceptions'
 
 describe TodoList do
   subject(:list)            { TodoList.new(items) }
