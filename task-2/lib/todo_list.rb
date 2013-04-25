@@ -19,6 +19,9 @@ class TodoList
       truncate_item(item)
       @db.add_todo_item(item) 
       self.notify
+      true
+    else
+      false
     end
   end
 
@@ -32,6 +35,7 @@ class TodoList
 
   def toggle_state(index)
     item = @db.get_todo_item(index)
+    raise ItemNil if item.nil?
     unless item.nil?
       truncate_item(item)
       @db.complete_todo_item(item, item.complete ? false : true)
@@ -47,6 +51,10 @@ class TodoList
 
   def truncate_item(item)
     item.title = item.title[0...255]
+  end
+
+  def get_todo_item(index)
+    true
   end
 
 end
