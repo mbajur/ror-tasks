@@ -1,0 +1,14 @@
+first_user:
+  id: 1
+  name: Michal
+  surname: Bajur
+  email: mbajur@gmail.com
+  password: 5f4dcc3b5aa765d61d8327deb882cf99
+  failed_login_count: 0
+
+second_user:
+  name: Michal
+  surname: Jubar
+  email: mike@proton.ie
+  password: 9174097194712
+  failed_login_count: 4

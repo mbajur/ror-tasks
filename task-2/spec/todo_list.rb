@@ -1,6 +1,6 @@
-require 'spec_helper'
-require 'lib/todo_list'
-require 'lib/exceptions'
+require_relative 'spec_helper'
+require_relative '../lib/todo_list'
+require_relative '../lib/exceptions'
 
 describe TodoList do
   subject(:list)            { TodoList.new(:db => database, :network => network) }

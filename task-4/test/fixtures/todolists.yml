@@ -1,0 +1,4 @@
+first_list:
+  id: 1
+  title: First todo list
+  user_id: 1
